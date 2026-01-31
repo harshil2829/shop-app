@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Shop</title>
+</head>
+<body>
+
+<h1>🛒 Mini E-Commerce Store</h1>
+
+<a href="/cart">🛍 View Cart</a>
+
+<hr>
+
+{% for p in products %}
+
+<div style="border:1px solid black;padding:10px;margin:10px">
+
+<h3>{{p[1]}}</h3>
+<p>₹{{p[2]}}</p>
+
+<a href="/add/{{p[0]}}">Add to Cart</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>
